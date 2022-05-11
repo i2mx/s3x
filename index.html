@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 3000%;
+        }
+    </style>
+
+</head>
+
+</body>
+
+
+<body>
+    <p id="cum">👉👌</p>
+
+    <script defer>
+
+        let delay = 150; 
+
+        let p = document.getElementById('cum')
+    
+        function iny() {
+            p.innerHTML = "👉 👌"
+            setTimeout(() => { outy() }, delay);
+            
+        }
+        
+        function outy() {
+            p.innerHTML = "👉👌"
+            setTimeout(() => { iny() }, delay);
+        }
+        
+        iny();
+
+    </script>
+</html>
